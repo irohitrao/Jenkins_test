@@ -7,11 +7,11 @@ pipeline {
           try {
             def ADD_RESULT = sh returnStdout:true, script: '''
 #!/bin/bash
-PWD '''
+pwd '''
 
             def MULTIPLICATION_RESULT = sh returnStdout:true, script: '''
 #!/bin/bash
-df -h .
+"df -h ."
 '''
 
             env.ADD_RESULT=ADD_RESULT
