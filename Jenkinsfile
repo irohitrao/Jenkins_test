@@ -11,7 +11,7 @@ pwd '''
 
             def MULTIPLICATION_RESULT = sh returnStdout:true, script: '''
 #!/bin/bash
-"df -h ."
+ls
 '''
 
             env.ADD_RESULT=ADD_RESULT
